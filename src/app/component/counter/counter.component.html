@@ -1,0 +1,16 @@
+<h1>{{Title()}}</h1>
+<h2>{{Title$ | async}}</h2>
+
+<h3>{{Subtitle$ | async}}</h3>
+<h3>{{Subtitle()}}</h3>
+
+<div style="border: 1px solid #ccc;" *ngFor="let item of service.userarry()">
+   <h2>Id is : {{item.id}}</h2>
+   <h2>Name is : {{item.name}}</h2>
+</div>
+<a mat-raised-button color="primary" (click)="adduser()">Add New user</a>
+<h3>{{usercount()}} users added</h3>
+<br>
+
+<app-counterbutton></app-counterbutton>
+<app-counterdisplay></app-counterdisplay>

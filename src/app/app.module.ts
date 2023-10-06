@@ -5,10 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './Material.Module';
+import { CounterComponent } from './component/counter/counter.component';
+import { CounterbuttonComponent } from './component/counterbutton/counterbutton.component';
+import { CounterdisplayComponent } from './component/counterdisplay/counterdisplay.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CounterComponent,
+    CounterbuttonComponent,
+    CounterdisplayComponent
   ],
   imports: [
     BrowserModule,
